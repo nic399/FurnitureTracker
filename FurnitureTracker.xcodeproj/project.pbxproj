@@ -13,6 +13,7 @@
 		01BD4E0E1FB3A2D400A67DCD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 01BD4E0C1FB3A2D400A67DCD /* Main.storyboard */; };
 		01BD4E101FB3A2D400A67DCD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 01BD4E0F1FB3A2D400A67DCD /* Assets.xcassets */; };
 		01BD4E131FB3A2D400A67DCD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 01BD4E111FB3A2D400A67DCD /* LaunchScreen.storyboard */; };
+		317D4E94E3B90E8404AC1485 /* Pods_FurnitureTracker.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D2782B2B109C06CEC67FC005 /* Pods_FurnitureTracker.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,9 @@
 		01BD4E0F1FB3A2D400A67DCD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		01BD4E121FB3A2D400A67DCD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		01BD4E141FB3A2D400A67DCD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8F85DF2CEC5C592656201DE7 /* Pods-FurnitureTracker.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FurnitureTracker.release.xcconfig"; path = "Pods/Target Support Files/Pods-FurnitureTracker/Pods-FurnitureTracker.release.xcconfig"; sourceTree = "<group>"; };
+		C27B68D7F2518AA99DAE06E3 /* Pods-FurnitureTracker.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FurnitureTracker.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FurnitureTracker/Pods-FurnitureTracker.debug.xcconfig"; sourceTree = "<group>"; };
+		D2782B2B109C06CEC67FC005 /* Pods_FurnitureTracker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FurnitureTracker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +35,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				317D4E94E3B90E8404AC1485 /* Pods_FurnitureTracker.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +47,8 @@
 			children = (
 				01BD4E051FB3A2D400A67DCD /* FurnitureTracker */,
 				01BD4E041FB3A2D400A67DCD /* Products */,
+				856D846DFF0340AA90567BC4 /* Pods */,
+				0C4C1E14606939020C70D131 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,6 +74,23 @@
 			path = FurnitureTracker;
 			sourceTree = "<group>";
 		};
+		0C4C1E14606939020C70D131 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D2782B2B109C06CEC67FC005 /* Pods_FurnitureTracker.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		856D846DFF0340AA90567BC4 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C27B68D7F2518AA99DAE06E3 /* Pods-FurnitureTracker.debug.xcconfig */,
+				8F85DF2CEC5C592656201DE7 /* Pods-FurnitureTracker.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,9 +98,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 01BD4E171FB3A2D400A67DCD /* Build configuration list for PBXNativeTarget "FurnitureTracker" */;
 			buildPhases = (
+				917B355D3532EDD52E0B7A9E /* [CP] Check Pods Manifest.lock */,
 				01BD4DFF1FB3A2D400A67DCD /* Sources */,
 				01BD4E001FB3A2D400A67DCD /* Frameworks */,
 				01BD4E011FB3A2D400A67DCD /* Resources */,
+				99654FD929FE60B14F44AE09 /* [CP] Embed Pods Frameworks */,
+				808B90F24E146A39D1AA879D /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -133,6 +160,62 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		808B90F24E146A39D1AA879D /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FurnitureTracker/Pods-FurnitureTracker-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		917B355D3532EDD52E0B7A9E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FurnitureTracker-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		99654FD929FE60B14F44AE09 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-FurnitureTracker/Pods-FurnitureTracker-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
+				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FurnitureTracker/Pods-FurnitureTracker-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		01BD4DFF1FB3A2D400A67DCD /* Sources */ = {
@@ -276,6 +359,7 @@
 		};
 		01BD4E181FB3A2D400A67DCD /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C27B68D7F2518AA99DAE06E3 /* Pods-FurnitureTracker.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -291,6 +375,7 @@
 		};
 		01BD4E191FB3A2D400A67DCD /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8F85DF2CEC5C592656201DE7 /* Pods-FurnitureTracker.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
